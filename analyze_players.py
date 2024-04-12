@@ -9,7 +9,7 @@ def load_data('player_data.csv'):
     return pd.read_csv('player_data.csv')
 
 def preprocess_data(df):
-    # Assuming 'points' is the target variable and 'age', 'games_played', 'score' are features
+    # Largest changes in player rankings from day to day and week to week
     df = df.dropna(subset=['today_rank', 'yesterday_rank', 'last_week_rank', 'score'])
     return df
 
