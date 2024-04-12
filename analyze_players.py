@@ -15,3 +15,6 @@ def preprocess_data(df):
     df = df.dropna(subset=['today_rank', 'yesterday_rank', 'last_week_rank', 'score']), inplace=True
     return df
 
+def largest_change_players(df):
+    # Find the 3 of your players with the largest value changes
+    
