@@ -5,8 +5,8 @@ from sklearn.metrics import mean_squared_error, r2_score
 import numpy as np
 
 # Pull today's file. Static now but will be dynamic eventually
-def load_data('player_data.csv'):
-    return pd.read_csv('player_data.csv')
+def load_data(filepath):
+    return pd.read_csv(filepath)
 
 def preprocess_data(df):
     # Largest changes in player rankings from day to day and week to week
