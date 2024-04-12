@@ -5,8 +5,8 @@ from sklearn.metrics import mean_squared_error, r2_score
 import numpy as np
 
 # Pull today's file. Static now but will be dynamic eventually
-def load_data(player_data.csv):
-    return pd.read_csv(player_data.csv)
+def load_data('player_data.csv'):
+    return pd.read_csv('player_data.csv')
 
 def preprocess_data(df):
     # Assuming 'points' is the target variable and 'age', 'games_played', 'score' are features
