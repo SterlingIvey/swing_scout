@@ -20,3 +20,7 @@ def largest_change_players(df):
     max_day_change = df[df['day_change'] == df['day_change'].max()]
     max_week_change = df[df['week_change'] == df['week_change'].max()]
     return max_day_change, max_week_change
+    
+def main():
+    df = load_data('player_data.csv')
+    df = preprocess_data(df)
