@@ -8,7 +8,7 @@ def load_data(player_data.csv):
 
 def preprocess_data(df):
     # Assuming 'points' is the target variable and 'age', 'games_played', 'score' are features
-    df = df.dropna(subset=['points', 'age', 'games_played', 'score'])
+    df = df.dropna(subset=['today_rank', 'yesterday_rank', 'last_week_rank', 'score'])
     return df
 
 def train_model(X_train, y_train):
