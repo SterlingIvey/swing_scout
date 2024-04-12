@@ -35,5 +35,8 @@ def main():
     model = train_model(X_train, y_train)
     evaluate_model(model, X_test, y_test)
 
+    # Cross validation
+    cv_scores = cross_val_score(model, features, target, cv=5)
+
 if __name__ == "__main__":
     main()
