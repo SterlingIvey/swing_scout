@@ -4,7 +4,7 @@ from sklearn.linear_model import LinearRegression
 from sklearn.metrics import mean_squared_error, r2_score
 import numpy as np
 
-# Pull today's file. Static now but will be dynamic eventually
+# Pull today's file. Static now but will be dynamic
 def load_data(filepath):
     return pd.read_csv(filepath)
 
