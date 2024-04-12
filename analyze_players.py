@@ -4,7 +4,7 @@ from sklearn.linear_model import LinearRegression
 from sklearn.metrics import mean_squared_error
 
 def load_data(filepath):
-    return pd.read_csv(filepath)
+    return pd.read_csv(player_data.csv)
 
 def preprocess_data(df):
     # Assuming 'points' is the target variable and 'age', 'games_played', 'score' are features
