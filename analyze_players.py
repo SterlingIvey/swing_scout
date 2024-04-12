@@ -37,6 +37,8 @@ def main():
 
     # Cross validation
     cv_scores = cross_val_score(model, features, target, cv=5)
+    print("Cross-validation scores:", cv_scores)
+    print("Average cross-validation score:", np.mean(cv_scores))
 
 if __name__ == "__main__":
     main()
