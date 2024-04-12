@@ -11,6 +11,7 @@ def load_data(filepath):
 def preprocess_data(df):
     # Largest changes in player rankings from day to day and week to week
     df['day_change'] = abs(df['today_rank'] - df['yesterday_rank'])
+    df['week_change'] = abs(df['today_rank'] - df['last_week_rank'])
     df = df.dropna(subset=['today_rank', 'yesterday_rank', 'last_week_rank', 'score'])
     return df
 
