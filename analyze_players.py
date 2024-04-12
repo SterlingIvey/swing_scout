@@ -27,7 +27,7 @@ def main():
     df = load_data('player_data.csv')
     df = preprocess_data(df)
     
-    features = df[['age', 'games_played', 'score']]
+    features = df[['today_rank', 'yesterday_rank', 'last_week_rank', 'score']]
     target = df['points']
     
     X_train, X_test, y_train, y_test = train_test_split(features, target, test_size=0.2, random_state=42)
