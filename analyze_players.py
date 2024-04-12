@@ -13,6 +13,7 @@ def preprocess_data(df):
     df = df.dropna(subset=['today_rank', 'yesterday_rank', 'last_week_rank', 'score'])
     return df
 
+# Train and evaluate the model
 def train_model(X_train, y_train):
     model = LinearRegression()
     model.fit(X_train, y_train)
