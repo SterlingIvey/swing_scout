@@ -18,3 +18,4 @@ def preprocess_data(df):
 def largest_change_players(df):
     # Find the 3 of your players with the largest value changes
     max_day_change = df[df['day_change'] == df['day_change'].max()]
+    max_week_change = df[df['week_change'] == df['week_change'].max()]
