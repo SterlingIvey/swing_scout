@@ -3,7 +3,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
 from sklearn.metrics import mean_squared_error
 
-def load_data(filepath):
+def load_data(player_data.csv):
     return pd.read_csv(player_data.csv)
 
 def preprocess_data(df):
