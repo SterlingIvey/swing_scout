@@ -15,33 +15,3 @@ def preprocess_data(df):
     df = df.dropna(subset=['today_rank', 'yesterday_rank', 'last_week_rank', 'score']), inplace=True
     return df
 
-# Train and evaluate the model
-def train_model(X_train, y_train):
-    model = LinearRegression()
-    model.fit(X_train, y_train)
-    return model
-
-def evaluate_model(model, X_test, y_test):
-    predictions = model.predict(X_test)
-    mse = mean_squared_error(y_test, predictions)
-    print("Mean Squared Error:", mse)
-
-def main():
-    df = load_data('player_data.csv')
-    df = preprocess_data(df)
-    
-    features = df[['today_rank', 'yesterday_rank', 'last_week_rank', 'score']]
-    target = df['points']
-    
-    X_train, X_test, y_train, y_test = train_test_split(features, target, test_size=0.2, random_state=42)
-    
-    model = train_model(X_train, y_train)
-    evaluate_model(model, X_test, y_test)
-
-    # Cross validation
-    cv_scores = cross_val_score(model, features, target, cv=5)
-    print("Cross-validation scores:", cv_scores)
-    print("Average cross-validation score:", np.mean(cv_scores))
-
-if __name__ == "__main__":
-    main()
