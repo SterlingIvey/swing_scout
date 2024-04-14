@@ -4,6 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fantasy Baseball Sidekick</title>
+    <style>
+    .ticker-wrap {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #1A1A1A; /* Nearly black background */
+    color: #C6DA02; /* Lime green text */
+    overflow: hidden;
+    height: 30px;
+    line-height: 30px;
+}
+
+.ticker {
+    display: flex;
+    white-space: nowrap;
+    animation: ticker 30s linear infinite;
+}
+
+.ticker-item {
+    margin-right: 50px;
+}
+
+@keyframes ticker {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+    </style>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="styles.css">
     </head>
