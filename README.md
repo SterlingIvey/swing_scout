@@ -6,8 +6,8 @@ Welcome to the Swing Scout repository! This app is designed to help fantasy base
 ## Features
 
 - **Player Analysis**: Analyze player performance trend data to predict future outcomes.
-- **Team Recommendations**: Get recommendations on which players to pick based on various criteria such as performance, injury status, and upcoming matches.
-- **Dynamic Updates**: Stay updated with the latest player stats and news.
+- **Freen Agency Recommendations**: Get recommendations on which undervalued players to pick up based on various criteria such as performance, injury status, and upcoming matches.
+- **Streaming Scout**: Daily recommendations for best streaming pitcher options.
 
 ## Installation
 
