@@ -1,7 +1,7 @@
 
 # Swing Scout
 
-Welcome to the Swing Scout repository! ⚾️This app is designed to help fantasy baseball enthusiasts make informed decisions about their fantasy teams. Using a combination of player statistics and predictive modeling, the app provides recommendations and insights to help you dominate your fantasy league.
+Welcome to the Swing Scout repository! ⚾️This app is designed to help fantasy baseball enthusiasts make informed decisions about their fantasy clubs. Using a combination of player statistics and predictive modeling, the app provides recommendations and insights to help you dominate your fantasy league.
 
 ## Features
 
