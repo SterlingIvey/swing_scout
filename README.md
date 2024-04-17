@@ -16,3 +16,27 @@ To get started with this project, you'll need to clone the repository and instal
 ```bash
 git clone https://github.com/yourusername/fantasy-baseball-aid.git
 cd fantasy-baseball-aid
+
+Built With
+
+	•	Flask - The web framework used
+	•	Pandas - Data manipulation and analysis
+	•	Scikit-Learn - Machine learning tools
+
+Contributing
+
+Please read CONTRIBUTING.md for details on our code of conduct, and the process for submitting pull requests to us.
+
+Versioning
+
+We use SemVer for versioning. For the versions available, see the tags on this repository.
+
+Authors
+
+Sterling Ivey - Initial work - SterlingIvey
+
+See also the list of contributors who participated in this project.
+
+License
+
+This project is proprietary source code and may only be used for commercial purposes by its owner and creator.
