@@ -34,9 +34,3 @@ We use SemVer for versioning. For the versions available, see the tags on this r
 Authors
 
 Sterling Ivey - Initial work - SterlingIvey
-
-See also the list of contributors who participated in this project.
-
-License
-
-This project is proprietary source code and may only be used for commercial purposes by its owner and creator.
